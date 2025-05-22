@@ -11,7 +11,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 1px;
 }
@@ -169,7 +169,7 @@ nav ul li a:hover {
 /* Importância */
 #importancia {
   background-color: #1a1a2e; 
-  padding: 60px 0;
+  padding: 10px;
 }
 
 #importancia h2 {
@@ -182,7 +182,7 @@ nav ul li a:hover {
 .importancia-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 20px;
 }
 
 .importancia-text {
@@ -219,7 +219,7 @@ nav ul li a:hover {
 #servicos {
   background-color: #1a1a2e; 
   color: #fff;
-  padding: 60px 0;
+  padding: 0;
 }
 
 #servicos h2 {
@@ -273,7 +273,7 @@ nav ul li a:hover {
 /* Sobre */
 #sobre {
   background-color: #1a1a2e; 
-  padding: 60px 0;
+  padding: 0;
 }
 
 #sobre h2 {
@@ -322,4 +322,98 @@ footer p {
 .social-links a:hover {
   color: #ff2a6d; 
   text-shadow: 0 0 10px #ff2a6d, 0 0 20px #ff2a6d; 
+}
+.separador {
+  border-top: 2px solid #7149c6;  
+  margin: 40px 0;                 
+  width: 100%;
+}
+    
+#mensagem {
+margin-top: 10px;
+  background-color: #19192c;
+  color: #ffffff;
+  padding: 10px 1px 50px;
+  text-align: center;
+  }
+
+#mensagem h1 {
+  color: #00d1ff;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  text-shadow: 0 0 10px #000, 0 0 20px #dce2e4;
+  }
+
+#form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #16213e;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  border: 2px solid #00d1ff;
+  text-align: center;
+  }
+
+#form input[type="text"],
+#form input[type="email"],
+#form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0f0c29;
+  color: #fff;
+  font-size: 1rem;
+  border: 1px solid #7149c6;
+  }
+
+#form input::placeholder,
+#form textarea::placeholder {
+  color: #aaa;
+  font-size: 1rem;
+  opacity: 0.8;
+  }
+
+#form input[type="submit"],
+#form input[type="reset"] {
+  background-color: #7149c6;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+#form input[type="submit"]:hover,
+#form input[type="reset"]:hover {
+  background-color: #8e5de9;
+  transform: translateY(-2px);
+  }
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #7149c6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #8e5de9;
+  transform: translateY(-3px);
 }
